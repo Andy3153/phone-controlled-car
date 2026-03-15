@@ -1,0 +1,3 @@
+[submodule "doc/my_style"]
+	path = doc/my_style
+	url = https://github.com/Andy3153/my_style.cls
