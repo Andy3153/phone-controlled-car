@@ -1,0 +1,53 @@
+%!TEX TS-program = lualatex
+%% vim: set fenc=utf-8 ts=1 sw=0 sts=0 sr et si tw=0 fdm=marker fmr=<<<,>>>:
+%%
+%% Scientific paper for `Phone Controlled Car`
+%%
+
+% <<< Basic document settings
+\documentclass[
+ fontsize  = 11,                 % font size
+ %papersize = a4,                 % paper size
+ %language  = {english,romanian}, % document language(s) (last language in a list is the main language)
+%
+ %imagesupport = true, % load packages, custom macros and customizations for images
+ %mathsupport  = true, % load packages, custom macros and customizations for math
+ %tablesupport = true, % load packages, custom macros and customizations for tables
+ %urlsupport   = true, % load packages, custom macros and customizations for URLs
+%
+ %docstyle                   = article,       % general document style [ article | book ]
+ %docstyleChapterClearpage   = false,         % whether to put chapter on a new page
+ %docstyleChapterStyle       = article,       % chapter heading style (see memman.pdf sec. 6.5.1)
+ %docstylePageLayout         = oneside,       % page layout [ oneside | twoside ]
+ %docstyleSectioningOpen     = any,           % on which side should document divisions open [ any | left | right ]
+ docstyleTitleStyle         = scientificpaper % style of \maketitle [ default | eseuribacromana ]
+ %docstyleToCClearpageBefore = false,         % whether to put ToC on a new page
+ %docstyleToCClearpageAfter  = false,         % whether to put content after the ToC on a new page
+%
+ %draft, % draft mode
+]{my_style}
+% >>>
+
+% <<< Packages
+% >>>
+
+% <<< Other settings
+% <<< Image location
+%\graphicspath{ {./img/} }
+% >>>
+% >>>
+
+% <<< Basic document info
+\title{Title}
+\author{Author}
+\date{\today}
+% >>>
+
+\begin{document}
+ \maketitle       % generate title
+ \tableofcontents % generate ToC
+
+ % <<< Document content
+ Template
+ % >>>
+\end{document}
