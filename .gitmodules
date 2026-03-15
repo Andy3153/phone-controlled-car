@@ -1,3 +1,6 @@
 [submodule "doc/my_style"]
 	path = doc/my_style
 	url = https://github.com/Andy3153/my_style.cls
+[submodule "src/Arduino-Makefile"]
+	path = src/Arduino-Makefile
+	url = https://github.com/sudar/Arduino-Makefile
