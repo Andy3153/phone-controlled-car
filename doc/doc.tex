@@ -30,6 +30,7 @@
 
 % <<< Packages
 \usepackage{multicol} % multiple column support
+\usepackage{minted}   % highlighted source code
 % >>>
 
 % <<< Other settings
@@ -161,8 +162,28 @@
  % <<< Source code
  \section{Source code}
  Given the use of an Arduino-compatible development board, the source code was written in the Arduino programming language, a C/C++-based dialect built on top of the AVR-GCC toolchain, augmented by the Arduino core libraries for hardware abstraction.
- The complete source code is publicly available at the repository linked in the project title:
- \makeatletter\inserturl{\mystyle@titlestyle@parameters@projecturl}\makeatother.
+
+ The complete source code is publicly available at the repository linked in the project title
+ (\makeatletter\inserturl{\mystyle@titlestyle@parameters@projecturl}\makeatother),
+ at path \texttt{src/main.ino}.
+ For completeness, the full source code is also shown below:
+
+\inputminted[
+ autogobble,                 % remove all leading whitespace
+ baselinestretch=1,          % line spacing
+ %breakanywhere,              % break lines anywhere
+ breaklines,                 % break lines
+ fontsize   = \footnotesize, % font size
+ frame      = single,        % frame around the code
+ framerule  = .1mm,          % frame width
+ framesep   = 1mm,           % distance between frame and code
+ mathescape = true,          % process LaTeX math inside comments
+ numbers    = left,          % line numbers
+ numbersep  = 2.5mm,         % distance between line numbers and code
+ reflabel   = main.ino,      % label that can be referenced with `\pageref`
+ style      = staroffice,    % syntax highlighting colorscheme (https://pygments.org/styles/)
+ tabsize    = 4,             % nr. of spaces a tab character is equivalent to, if present
+]{arduino}{../src/main.ino}
  % >>>
  % >>>
  % >>>
