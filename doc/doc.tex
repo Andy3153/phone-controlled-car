@@ -12,7 +12,7 @@
 %
  %imagesupport = true, % load packages, custom macros and customizations for images
  %mathsupport  = true, % load packages, custom macros and customizations for math
- %tablesupport = true, % load packages, custom macros and customizations for tables
+ tablesupport = true, % load packages, custom macros and customizations for tables
  urlsupport   = true, % load packages, custom macros and customizations for URLs
 %
  %docstyle                   = article,       % general document style [ article | book ]
@@ -88,6 +88,26 @@
  \end{itemize}
 
  The flexibility of the platform makes it well-suited for both educational environments and practical deployment scenarios.
+ % >>>
+
+ % <<< Materials and Methods
+ \chapter{Materials and Methods}
+ % <<< Hardware Components
+ \section{Hardware Components}
+ The main required hardware components are listed as follows:
+
+ \inserttbl{|p{35mm}|l|p{94mm}|}<Hardware components>
+ {
+  \hline
+  \textbf{component}                    & \textbf{model}       & \textbf{link} \\\hline
+  \hline
+  battery cells                         & \texttt{18650}       & \inserturl{https://www.optimusdigital.ro/ro/acumulatori-li-ion/3152-acumulator-samsung-li-ion-3000-mah-18650-inr18650-30q.html}\\\hline
+  bluetooth module                      & \texttt{HC-05}       & \inserturl{https://www.optimusdigital.ro/ro/wireless-bluetooth/153-modul-bluetooth-master-slave-hc-05-cu-adaptor.html}\\\hline
+  development board                     & \texttt{Arduino Uno} & \inserturl{https://www.optimusdigital.ro/ro/placi-avr/4561-placa-de-dezvoltare-compatibila-cu-arduino-uno-r3-atmega328p-atmega16u2-cablu-50-cm.html}\\\hline
+  motor driver module                   & \texttt{L298N}       & \inserturl{https://www.optimusdigital.ro/ro/drivere-de-motoare-cu-perii/145-driver-de-motoare-dual-l298n.html}\\\hline
+  motor with reduction gears and wheels & -                    & \inserturl{https://www.optimusdigital.ro/ro/motoare-altele/139-motor-cu-reductor-si-roata.html}\\\hline
+ }
+ % >>>
  % >>>
  % >>>
 \end{document}
