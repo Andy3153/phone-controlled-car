@@ -2,6 +2,7 @@
 %% vim: set fenc=utf-8 ts=1 sw=0 sts=0 sr et si tw=0 fdm=marker fmr=<<<,>>>:
 %%
 %% Scientific paper for `Phone Controlled Car`
+%% Dobrete Andrei-Robert, Mihalache Denisa Ana-Maria
 %%
 
 % <<< Basic document settings
@@ -35,7 +36,11 @@
 
 % <<< Other settings
 % <<< Image location
-\graphicspath{ {./img/} }
+\graphicspath
+{
+ {./img/}
+ {../layout/exports}
+}
 % >>>
 % >>>
 
@@ -113,6 +118,12 @@
  % >>>
  % >>>
 
+ % <<< Circuit Design
+ \section{Circuit Design}
+ The circuit schematic, designed and rendered using the Fritzing electronic design automation (EDA) tool, is presented below:
+ \insertimg{layout_bb}[width=.6\textwidth]<Circuit schematic>
+ % >>>
+
  % <<< Software and Tools
  \section{Software and Tools}
  % <<< IDE
@@ -152,8 +163,8 @@
 
  An example configuration is shown below:
  \begin{multicols}{2}
-  \insertimg{s2.2.3.1_1}[width=.15\textheight]<Application interface>
-  \insertimg{s2.2.3.1_2}[width=.15\textheight]<Button mappings>
+  \insertimg{appconfig_1}[width=.09\textheight]<Application interface>
+  \insertimg{appconfig_2}[width=.09\textheight]<Button mappings>
  \end{multicols}
  % >>>
  % >>>
