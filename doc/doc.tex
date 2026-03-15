@@ -42,6 +42,38 @@
  {../layout/exports}
 }
 % >>>
+
+% <<< Page styles
+\copypagestyle{scientificpaper}{plain}
+
+\makeoddhead{scientificpaper}
+{}
+{Journal of Industrial Engineering and Robotics -- Volume 7, Number 4, 2023}
+{}
+
+\makeevenhead{scientificpaper}
+{}
+{Journal of Industrial Engineering and Robotics -- Volume 7, Number 4, 2023}
+{}
+
+\makeoddfoot{scientificpaper}
+{}
+{\thepage}
+{}
+
+\makeevenfoot{scientificpaper}
+{}
+{\thepage}
+{}
+
+\makerunningwidth{scientificpaper}[\textwidth]{\textwidth}
+
+\makeheadrule{scientificpaper}{\textwidth}{.1mm}
+\makefootrule{scientificpaper}{\textwidth}{0mm}{0mm}
+
+\pagestyle{scientificpaper}
+\aliaspagestyle{chapter}{scientificpaper}
+% >>>
 % >>>
 
 % <<< Basic document info
