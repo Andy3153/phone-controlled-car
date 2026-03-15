@@ -13,6 +13,7 @@
 **/*.synctex.gz
 **/*.toc
 **/*.xdv
+**/*_minted
 
 **/TODO.md
 **/*.pdf
