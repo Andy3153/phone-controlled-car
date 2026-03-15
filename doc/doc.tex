@@ -94,9 +94,10 @@
  \chapter{Materials and Methods}
  % <<< Hardware Components
  \section{Hardware Components}
- The main required hardware components are listed as follows:
+ The main required hardware components of the car are listed as follows:
 
- \inserttbl{|p{35mm}|l|p{94mm}|}<Hardware components>
+ % <<< table
+ \inserttbl{|p{35mm}|p{23mm}|p{93mm}|}<Hardware components of the car>
  {
   \hline
   \textbf{component}                    & \textbf{model}       & \textbf{link} \\\hline
@@ -107,6 +108,47 @@
   motor driver module                   & \texttt{L298N}       & \inserturl{https://www.optimusdigital.ro/ro/drivere-de-motoare-cu-perii/145-driver-de-motoare-dual-l298n.html}\\\hline
   motor with reduction gears and wheels & -                    & \inserturl{https://www.optimusdigital.ro/ro/motoare-altele/139-motor-cu-reductor-si-roata.html}\\\hline
  }
+ % >>>
+ % >>>
+
+ % <<< Software and Tools
+ \section{Software and Tools}
+ % <<< IDE
+ \subsection{IDE}
+ Software development was carried out using the Arduino build toolchain.
+ While the Arduino IDE (\inserturl{https://docs.arduino.cc/software/ide}) provides an accessible interface for compilation and flashing, the project used Arduino-Makefile by Sudar Muthu (\inserturl{https://github.com/sudar/Arduino-Makefile}), allowing development in a custom environment (in this case, Neovim).
+ % >>>
+
+ % <<< Libraries used by the code
+ \subsection{Libraries used by the code}
+ To interface with the dual H-bridge motor driver, an external library was used: the open-source \texttt{L298N} library by Andrea Lombardo (\inserturl{https://github.com/AndreaLombardo/L298N}), specifically utilizing the \texttt{L298NX2.h} header, which provides a high-level abstraction for the simultaneous control of two independent motor channels.
+ % >>>
+
+ % <<< Mobile application used for control
+ \subsection{Mobile application used for control}
+ A variety of mobile applications are compatible with the system.
+ For the purposes of this study, the primary application used for testing and validation was the first listed below.
+ The applications that were tested are listed as follows:
+
+ % <<< table
+ \inserttbl{|p{35mm}|>{\hyphenpenalty=10000\exhyphenpenalty=10000}p{23mm}|p{93mm}|}<Applications tested with the project>
+ {
+  \hline
+  \textbf{app name}                     & \textbf{developer}      & \textbf{link} \\\hline
+  \hline
+  Arduino Bluetooth Controlled Joystick & Uncia Robotics          & \inserturl{https://play.google.com/store/apps/details?id=uncia.robotics.joystick}\\\hline
+  Arduino bluetooth controller          & Giumig development apps & \inserturl{https://play.google.com/store/apps/details?id=com.giumig.apps.bluetoothserialmonitor}\\\hline
+  Bluetooino: Arduino Bluetooth         & Strike Software         & \inserturl{https://play.google.com/store/apps/details?id=strikesoftware.bluetooino}\\\hline
+  Arduino Bluetooth                     & Kharis Digital          & \inserturl{https://play.google.com/store/apps/details?id=com.arbl.arduinobluetooth}\\\hline
+ }
+ % >>>
+
+ % <<< Configuring the mobile application
+ \subsubsection{Configuring the mobile application}
+ The mobile application requires the configuration of four directional control buttons, each mapped to a distinct single-character command transmitted over the Bluetooth serial link: \texttt{N}, \texttt{S}, \texttt{W}, and \texttt{E} corresponding to forward, reverse, left, and right motion respectively.
+ An additional button is assigned the null command character \texttt{0}, which triggers a full motor halt.
+ % >>>
+ % >>>
  % >>>
  % >>>
  % >>>
