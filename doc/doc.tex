@@ -10,7 +10,7 @@
  %papersize = a4,                 % paper size
  %language  = {english,romanian}, % document language(s) (last language in a list is the main language)
 %
- %imagesupport = true, % load packages, custom macros and customizations for images
+ imagesupport = true, % load packages, custom macros and customizations for images
  %mathsupport  = true, % load packages, custom macros and customizations for math
  tablesupport = true, % load packages, custom macros and customizations for tables
  urlsupport   = true, % load packages, custom macros and customizations for URLs
@@ -29,11 +29,12 @@
 % >>>
 
 % <<< Packages
+\usepackage{multicol} % multiple column support
 % >>>
 
 % <<< Other settings
 % <<< Image location
-%\graphicspath{ {./img/} }
+\graphicspath{ {./img/} }
 % >>>
 % >>>
 
@@ -147,6 +148,12 @@
  \subsubsection{Configuring the mobile application}
  The mobile application requires the configuration of four directional control buttons, each mapped to a distinct single-character command transmitted over the Bluetooth serial link: \texttt{N}, \texttt{S}, \texttt{W}, and \texttt{E} corresponding to forward, reverse, left, and right motion respectively.
  An additional button is assigned the null command character \texttt{0}, which triggers a full motor halt.
+
+ An example configuration is shown below:
+ \begin{multicols}{2}
+  \insertimg{s2.2.3.1_1}[width=.15\textheight]<Application interface>
+  \insertimg{s2.2.3.1_2}[width=.15\textheight]<Button mappings>
+ \end{multicols}
  % >>>
  % >>>
  % >>>
