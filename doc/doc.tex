@@ -69,6 +69,25 @@
  \tableofcontents % generate ToC
 
  % <<< Document content
- Template
+ % <<< Introduction
+ \chapter{Introduction}
+ The rapid development of low-cost microcontroller platforms has created new possibilities for the development of versatile robotic systems.
+ The Arduino ecosystem has emerged as the most popular open-source prototyping platform because of its accessible hardware architecture, extensive library support and the large community around it.
+ By integrating Bluetooth communication, it becomes possible to create a wireless link between a microcontroller-based vehicle and a smartphone, enabling real-time control via a dedicated mobile application.
+
+ This paper presents the design, implementation and source code of a smartphone controlled robotic car built upon the Arduino platform.
+ The system uses the \texttt{Serial Port Profile (SPP)} of the Bluetooth standard to transmit directional control signals from a mobile device to the Bluetooth module (\texttt{HC-05}), which gets parsed by the microcontroller to drive a motor driver module (\texttt{L298N}) that actuates the vehicle's DC motors.
+ The modularity, simplicity and extensibility of the architecture allow it to serve as a foundational platform for a wide range of applications.
+ These include, but are not limited to:
+ \begin{itemize}
+  \item remote-controlled (RC) navigation,
+  \item autonomous maze-solving through wall-following algorithms,
+  \item obstacle avoidance via ultrasonic or infrared proximity sensors,
+  \item line-following using reflectance sensor arrays,
+  \item robotic manipulation through the integration of a robotic arm.
+ \end{itemize}
+
+ The flexibility of the platform makes it well-suited for both educational environments and practical deployment scenarios.
+ % >>>
  % >>>
 \end{document}
