@@ -37,6 +37,13 @@ Following the initial publication in the journal above, we were contacted by the
 <!-- }}} -->
 <!-- }}} -->
 
+<!-- {{{ Repository structure -->
+## Repository structure
+- `doc/`: Contains the paper and the source code for it, which uses [`my_style.cls`](https://github.com/Andy3153/my_style.cls) by [Andy3153](https://github.com/Andy3153) included as a Git submodule for the LaTeX document style.
+- `layout/`: Contains the circuit schematic, designed and rendered using the [Fritzing](https://fritzing.org) electronic design automation (EDA) tool.
+- `src/`: Contains the source code, written in the Arduino programming language, which uses [Arduino-Makefile](https://github.com/sudar/Arduino-Makefile) by [Sudar Muthu](https://github.com/sudar) included as a Git submodule to allow development in any custom environment, independent of the Arduino IDE.
+<!-- }}} -->
+
 <!-- {{{ Authorship -->
 ## Authorship
 Authors listed in the paper:
