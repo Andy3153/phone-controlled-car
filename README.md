@@ -4,7 +4,7 @@
 
 <!-- {{{ Overview -->
 ## Overview
-This repository contains the documentation and source code for the **Phone-Controlled Car** project.
+This repository contains the documentation and source code for the **Phone Controlled Car** project.
 
 This project was originally developed in 2023 for the **Student Scientific Communications Session** at the [Faculty of Industrial Engineering and Robotics (FIIR)](https://fiir.upb.ro/), [Polytechnic University of Bucharest](https://upb.ro/) by Andrei-Robert Dobrete (me) and Denisa Ana-Maria Mihalache.
 
@@ -39,9 +39,9 @@ Following the initial publication in the journal above, we were contacted by the
 
 <!-- {{{ Repository structure -->
 ## Repository structure
-- `doc/`: Contains the paper and the source code for it, which uses [`my_style.cls`](https://github.com/Andy3153/my_style.cls) by [Andy3153](https://github.com/Andy3153) included as a Git submodule for the LaTeX document style.
+- `doc/`: Contains the paper and the source code for it, which uses [`my_style.cls`](https://github.com/Andy3153/my_style.cls) by [Andrei-Robert Dobrete (me)](https://github.com/Andy3153) included as a Git submodule for the LaTeX document style.
 - `layout/`: Contains the circuit schematic, designed and rendered using the [Fritzing](https://fritzing.org) electronic design automation (EDA) tool.
-- `src/`: Contains the source code, written in the Arduino programming language, which uses [Arduino-Makefile](https://github.com/sudar/Arduino-Makefile) by [Sudar Muthu](https://github.com/sudar) included as a Git submodule to allow development in any custom environment, independent of the Arduino IDE.
+- `src/`: Contains the source code, written in the Arduino programming language, which uses [`Arduino-Makefile`](https://github.com/sudar/Arduino-Makefile) by [Sudar Muthu](https://github.com/sudar) included as a Git submodule to allow development in any custom environment, independent of the Arduino IDE.
 <!-- }}} -->
 
 <!-- {{{ Authorship -->
@@ -56,5 +56,5 @@ Scientific coordinator:
 
 <!-- {{{ License -->
 ## License
-This repository is licensed under the GNU General Public License v3.0 (GPL-3.0). See the LICENSE file for details.
+This repository is licensed under the GNU General Public License v3.0 (GPL-3.0). See the [`LICENSE`](LICENSE) file for details.
 <!-- }}} -->
